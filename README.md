@@ -5,4 +5,4 @@ A routing tool using ROSM, Leaflet and D3
 
 _______
 
-This tool is being developed by James David Smith.
+This tool is being developed by JDS.
