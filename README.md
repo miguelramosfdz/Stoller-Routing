@@ -7,4 +7,4 @@ _______
 
 This tool is being developed by JDS.
 
-[Here is my index page](index.html)
+[Here is my index page](leaflet_code.js)
