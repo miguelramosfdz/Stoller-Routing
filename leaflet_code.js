@@ -1,4 +1,4 @@
-var map = L.map('map').setView([51.505, -0.09], 10);
+var map = L.map('map').setView([51.505, -0.09], 13);
 
   	L.tileLayer('http://{s}.tile.cloudmade.com/10b29eb7b27e439e899b4352acbc86e3/997/256/{z}/{x}/{y}.png', {
 			maxZoom: 18,
