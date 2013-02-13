@@ -7,4 +7,4 @@ _______
 
 This tool is being developed by JDS.
 
-[Read more words!](index.html)
+[Here is my index page](index.html)
