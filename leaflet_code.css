@@ -1,0 +1,9 @@
+/*
+Two columns, one is map, one is text/inputs
+*/
+
+#wrapper{
+  border: 1px solid;
+  width: 99%;
+  height: 99;
+}
