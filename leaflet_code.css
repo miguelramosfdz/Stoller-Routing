@@ -3,19 +3,20 @@ Two columns, one is map, one is text/inputs
 */
 
 #wrapper{
-  border: 1px solid;
   width: 99%;
   height: 99;
 }
 
 #right-column{
-  border: 1px solid black;
-  width: 50%;
-  height: 100%;
+  border: 1px solid #FFF;
+  width: 10px;
+  height: 10px;
+  float: left;
 }
 
 #left-column{
-  border: 1px solid black;
-  width: 50%;
-  height: 100%;
+  border: 1px solid #FFF;
+  width: 10px;
+  height: 10px;
+  float: right;
 }
