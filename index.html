@@ -1,19 +1,44 @@
 <html>
-<head>
-	<title>Leaflet, D3 and R-OSM</title>
-	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css" />
-<!--[if lte IE 8]>
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.ie.css" />
-<![endif]-->
+    
+    <head>
+        <title>Leaflet, D3 and R-OSM</title>
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css"
+        />
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.ie.css"
+            />
+        <![endif]-->
+        <script src="http://libs.cartocdn.com/cartodb.js/v2/cartodb.js"></script>
+        <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v2/themes/css/cartodb.css"
+        />
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v2/themes/css/cartodb.ie.css"
+            />
+        <![endif]-->
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+    </head>
+    
+    <body>
+        <div id="wrapper">
+            <div id="map"></div>
+            <div id="right">
+                
+                <script type="text/javascript"> 
 
+	   d3.csv('http://therealjimshady.cartodb.com/api/v2/sql?q=SELECT%20st_y(the_geom)%20as%20longitude,%20st_x(the_geom)%20as%20latitude%20FROM%20cyclecourier%20WHERE%20the_geom%20IS%20NOT%20NULL&api_key=713a47baf5db59e0c2881ae10f673811411f6c80&format=csv', function (error, csvdata) { 
+       d3.select("body") 
+       .selectAll("p") 
+       .data(csvdata) 
+       .enter() 
+       .append("p") 
+       .text(function(e) { return e.longitude + "," + e.latitude;}) 
+         }); 
+  </script>
+                
+            </div>
+        </div>
+        <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+        <script type="text/javascript" src="leaflet_code.js"></script>
+    </body>
 
-</head>
-<body>
-	
-	<div id="map" style="width: 500px; height: 500px"></div>
-	<script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
-	<script type="text/javascript" src="leaflet_code.js"></script>
-
-	
-</body>
 </html>
