@@ -5,6 +5,7 @@ Two columns, one is map, one is text/inputs
 #wrapper{
   width: 99%;
   height: 99;
+  border: 1px solid #FFF;
 }
 
 #right-column{
