@@ -1,15 +1,3 @@
 /*
 Two columns, one is map, one is text/inputs
 */
-
-#wrapper{
-  width: 99%;
-  height: 99%;
-}
-
-#right-column{
-  border: 1px solid;
-  width: 50%;
-  height: 100%;
-  float: left;
-}
