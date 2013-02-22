@@ -7,4 +7,6 @@ _______
 
 This tool is being developed by JDS.
 
-[Here is my index page](leaflet_code.js)
+Tasks:
+1) Get map defined
+2) Read in a latlng from a click on the map and store it as a variable (think that this is working?)
