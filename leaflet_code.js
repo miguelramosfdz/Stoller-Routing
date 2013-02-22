@@ -1,3 +1,5 @@
+//Get the main map options set-up
+
 var map = L.map('map').setView([51.505, -0.09], 13);
 
   	L.tileLayer('http://{s}.tile.cloudmade.com/10b29eb7b27e439e899b4352acbc86e3/997/256/{z}/{x}/{y}.png', {
@@ -6,4 +8,9 @@ var map = L.map('map').setView([51.505, -0.09], 13);
 		}).addTo(map);
 
 
+//Get the lat and long of a user clicking on the map
+function onMapClick(e) {
+    alert("You clicked the map at " + e.latlng);
+}
 
+map.on('click', onMapClick);
