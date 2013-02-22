@@ -14,7 +14,12 @@
     <body>
         <div id="wrapper">
             <div id="map"></div>
-            <div id="right">           
+            <div id="right">
+            <script type="text/javascript">
+    		d3.select("right")
+				.append("p")
+					.text("New paragraph!");
+		    </script>
             </div>
         </div>
         <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
