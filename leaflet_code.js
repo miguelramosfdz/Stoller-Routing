@@ -9,8 +9,10 @@ var map = L.map('map').setView([51.505, -0.09], 13);
 
 
 //Get the lat and long of a user clicking on the map
+
 function onMapClick(e) {
-    alert("You clicked the map at " + e.latlng);
+    var startlatlng = e.latlng;
+    return startlatlng;
 }
 
 map.on('click', onMapClick);
