@@ -30,3 +30,11 @@ map.on('contextmenu', function(f) {
 
 // Starting to create the url to request JSON for ROSM
 
+// Will then sent the URL to R OSM and get the JSON back.
+
+// The next to extract the google encoded polylines
+
+// Then use this to decode them https://github.com/jieter/Leaflet.encoded
+
+// Then display them on the map
+
