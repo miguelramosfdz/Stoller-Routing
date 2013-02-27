@@ -8,28 +8,25 @@ var map = L.map('map').setView([51.505, -0.09], 13);
 		}).addTo(map);
 
 // Set my variables for the start and end points the user clicks
-var $startlatlng;
-var $endlatlng;
-var $rosmlink;
+var $latlng = new Array(); 
+var $cnt=0;
 
-// If the start point is undefined then set it with first click.
-// Second map click becomes the end point
-// Futher map clicks at this time are discarded.
-map.on('click', function(e) {
-	if($startlatlng == undefined)
-	{$startlatlng = e.latlng.lat + ',' + e.latlng.lng;}
-	else
-	{$endlatlng = e.latlng.lat + ',' + e.latlng.lng;}
-	console.log($startlatlng);
-	console.log($endlatlng);
+// Make an array of clicked points
+map.on('click', function(e) 
+{
+      $latlng[$cnt] = e.latlng.lat + ',' + e.latlng.lng;
+      $cnt++;
+      var $i;
+      for($i=0; $i < $cnt; $i++) 
+      {
+        console.log($latlng[$i]);
+      }
 });
 
-$rosmlink = 'http://router.project-osrm.org/viaroute?loc=' + $startlatlng + '&' + $endlatlng;
-
+// When right click on the map, show the content in the array
 map.on('contextmenu', function(f) {
-	alert($rosmlink);
+	alert($latlng);
 	});
 
 // Starting to create the url to request JSON for ROSM
-
 
