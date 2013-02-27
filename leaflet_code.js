@@ -30,7 +30,8 @@ map.on('contextmenu', function(f) {
 
 // Starting to create the url to request JSON for ROSM
 
-// Will then sent the URL to R OSM and get the JSON back.
+// Will then sent the URL to R OSM and get the JSON back. Probably using jQuery or something like that.
+// This looks useful: http://stackoverflow.com/questions/8021022/parse-json-from-local-url-with-jquery
 
 // The next to extract the google encoded polylines
 
