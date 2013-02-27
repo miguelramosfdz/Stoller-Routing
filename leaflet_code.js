@@ -24,7 +24,7 @@ map.on('click', function(e) {
 	console.log($endlatlng);
 });
 
-$rosmlink = 'http://router.project-osrm.org/viaroute?loc=' + $startlatlng + '&' + $endlatlng
+$rosmlink = 'http://router.project-osrm.org/viaroute?loc=' + $startlatlng + '&' + $endlatlng;
 
 map.on('contextmenu', function(f) {
 	alert($rosmlink);
