@@ -38,4 +38,5 @@ map.on('contextmenu', function(f) {
 // Then use this to decode them https://github.com/jieter/Leaflet.encoded
 
 // Then display them on the map
-
+var encoded = "udfyHf{S_@v@K`@eC[e@u@iDgCeA{@a@lA_AzCc@tA_AvCMd@u@u@{DsEqCsC{A{AuCcCgAeAs@s@{@y@iB}Bq@o@eByA_@UGEQU}@sA{A}Bg@eAYk@CGKMm@s@g@GSEQISE]EaA@G@i@@eADy@BINYv@EFEDEBE@G?EAWIGCa@MGECEEGCGCGAI?G?K?gAGQKSOKwAs@ECkAWGEEEIIgAoAmBwBmB}BECoAuA{AwBOa@g@aAaBuDo@aBm@wAk@yAa@y@k@iAw@mAoAiA_@[SK_@OuBgA]OWOu@g@KEg@e@]YUSECEEYUOKQQS_@Q]a@m@MSW]o@}@k@u@O]u@}@SQY_@GE][[[o@]ACGESK[Km@O}EsA_FmAg@Mw@QQEk@QKCGCc@EMCMAg@Qk@YKECAIC[YAs@?YCMEQGWIQa@q@EE[SgBeAiAq@_@[MIKIk@_@WMOKe@[e@WeAS[Ic@Mg@Wa@YyAqBKMo@u@Y]{@aAs@w@MQg@g@]vFMlBC\\MIBYd@iHBi@BW^oB";
+var polyline = L.Polyline.fromEncoded(encoded).addTo(map);
