@@ -15,7 +15,7 @@
     <div id="right">
 	<div id="placeholder"></div>
 	<script>
-  $.getJSON('route.json', function(data) {
+  getJSON('route.json', function(data) {
         document.getElementById("placeholder").innerHTML=data.route_geometry;
   });
     </script>
