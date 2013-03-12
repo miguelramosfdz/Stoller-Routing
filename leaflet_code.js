@@ -34,8 +34,6 @@ map.on('contextmenu', function(f) {
 // Here is a tutorial on how to get the JSON and display it somewhere http://iviewsource.com/codingtutorials/getting-started-with-javascript-object-notation-json-for-absolute-beginners/
 
 // The next to extract the google encoded polylines
-var obj = jQuery.parseJSON('route.json');
-console.log(obj.route_geometry);
 
 // Then use this to decode them https://github.com/jieter/Leaflet.encoded
 
