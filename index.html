@@ -13,7 +13,12 @@
 	<div id="map" style="width: 50%; height: 500px; float: left"></div>
     </div>
     <div id="right">
-           
+	<div id="placeholder"></div>
+	<script>
+  $.getJSON('route.json', function(data) {
+        document.getElementById("placeholder").innerHTML=data.route_geometry;
+  });
+    </script>
     </div>    
 	<script type="text/javascript" src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
