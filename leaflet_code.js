@@ -30,7 +30,18 @@ map.on('contextmenu', function(f) {
 
 // Starting to create the url to request JSON for ROSM
 
+url = 'http://router.project-osrm.org/viaroute?loc=51.492072,-0.103340&loc=51.504362,-0.091152&jsonp=myroute';
+
 // Will then sent the URL to R OSM and get the JSON back. Probably using jQuery or something like that.
+
+jQuery.ajax({
+		url: url,
+		dataType: "jsonp",
+		async:false,
+		jsonpCallback: "routeParseToGeojson",
+		jsonp: 'callback'
+   });
+
 // Here is a tutorial on how to get the JSON and display it somewhere http://iviewsource.com/codingtutorials/getting-started-with-javascript-object-notation-json-for-absolute-beginners/
 
 // The next to extract the google encoded polylines
