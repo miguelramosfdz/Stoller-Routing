@@ -51,7 +51,7 @@ var polyline = L.Polyline.fromEncoded(encoded).addTo(map);
 
 
 $(document).ready(function() {
-    $.getJSON("http://api.twitter.com/1/statuses/user_timeline/codinghorror.json" + "?callback=?", null,
+    $.getJSON("http://router.project-osrm.org/viaroute?loc=1.48251,-0.10692&loc=51.51600,-0.08102&jsonp=route"
     	function(route_data) {
         	console.log(route_data)
     });
