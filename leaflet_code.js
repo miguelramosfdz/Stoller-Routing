@@ -53,9 +53,6 @@ var polyline = L.Polyline.fromEncoded(encoded).addTo(map);
 $(document).ready(function() {
     var url =  "http://api.twitter.com/1/statuses/user_timeline/codinghorror.json";
     $.getJSON(url + "?callback=?", null, function(tweets) {
-        for(i in tweets) {
-            tweet = tweets[i];
-            $("#tweet-list").append(tweet.text + "<hr />");
-        }
+        console.log(tweets)
     });
 });
