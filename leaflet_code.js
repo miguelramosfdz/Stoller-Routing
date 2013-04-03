@@ -51,8 +51,8 @@ var polyline = L.Polyline.fromEncoded(encoded).addTo(map);
 
 
 $(document).ready(function() {
-    var url =  "http://api.twitter.com/1/statuses/user_timeline/codinghorror.json";
-    $.getJSON(url + "?callback=?", null, function(route_data) {
-        console.log(route_data)
+    $.getJSON("http://api.twitter.com/1/statuses/user_timeline/codinghorror.json" + "?callback=?", null,
+    	function(route_data) {
+        	console.log(route_data)
     });
 });
