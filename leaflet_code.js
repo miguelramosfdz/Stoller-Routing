@@ -51,8 +51,8 @@ var polyline = L.Polyline.fromEncoded(encoded).addTo(map);
 
 
 $(document).ready(function() {
-    var url =  "http://router.project-osrm.org/viaroute?loc=1.48251,-0.10692&loc=51.51600,-0.08102";
-    $.getJSON(url + "?callback=?", null, function(tweets) {
-        console.log(tweets)
+    var url =  "http://api.twitter.com/1/statuses/user_timeline/codinghorror.json";
+    $.getJSON(url + "?callback=?", null, function(route_data) {
+        console.log(route_data)
     });
 });
