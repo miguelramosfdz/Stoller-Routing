@@ -51,7 +51,7 @@ var polyline = L.Polyline.fromEncoded(encoded).addTo(map);
 
 
 $(document).ready(function() {
-    $.getJSON("http://api.twitter.com/1/statuses/user_timeline/codinghorror.json" + "?callback=?", null, function(route_data) {
+    $.getJSON("http://maps.googleapis.com/maps/api/directions/json?origin=SE173TA&destination=London%20Bridge&sensor=false" + "?callback=?", null, function(route_data) {
         	console.log(route_data)
     });
 });
